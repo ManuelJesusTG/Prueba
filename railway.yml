@@ -1,0 +1,9 @@
+services:
+  - name: app
+    type: node
+    env:
+      NODE_ENV: production
+      port: 3000
+      DB_URI: 'mongodb+srv://mjtg:root@tfg.wyzu7d4.mongodb.net/Sport_Planet_BD?retryWrites=true&w=majority'
+    buildCommand: npm install
+    startCommand: npm start
